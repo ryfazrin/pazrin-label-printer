@@ -84,6 +84,8 @@ const App = () => {
         <button type="button" onClick={handleAddProduct}>
           Add Product
         </button>
+        <br />
+        <hr />
         <button type="submit">Submit</button>
       </form>
       <ReactToPrint
