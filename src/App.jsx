@@ -85,9 +85,9 @@ const App = () => {
           <button type="button" onClick={handleAddProduct}>
             Add Product
           </button>
-          <br />
-          <hr />
+          <br /><br />
           <button type="submit">Submit</button>
+          <hr />
         </form>
         <ReactToPrint
           trigger={() => <button>Print</button>}
