@@ -38,6 +38,7 @@ const App = () => {
       }))
     );
     setLabels(newLabels);
+    alert('Success');
   };
 
   return (
