@@ -42,56 +42,59 @@ const App = () => {
 
   return (
     <div>
-      <h1>Riska Voucher Printer</h1>
-      <form onSubmit={handleSubmit}>
-        {products.map((product, index) => (
-          <div key={index} style={{ marginBottom: "20px" }}>
-            <div>
-              <label>Nama Produk: </label>
-              <input
-                type="text"
-                name="name"
-                value={product.name}
-                onChange={(event) => handleProductChange(index, event)}
-                required
-              />
+      <div className="form-product">
+        <h1>Riska Voucher Printer</h1>
+        <form onSubmit={handleSubmit}>
+          {products.map((product, index) => (
+            <div key={index} style={{ marginBottom: "20px" }}>
+              <div>
+                <label>Nama Produk: </label>
+                <input
+                  type="text"
+                  name="name"
+                  value={product.name}
+                  onChange={(event) => handleProductChange(index, event)}
+                  required
+                />
+              </div>
+              <div>
+                <label>Harga: </label>
+                <input
+                  type="number"
+                  name="price"
+                  value={product.price}
+                  onChange={(event) => handleProductChange(index, event)}
+                  required
+                />
+              </div>
+              <div>
+                <label>Jumlah Kotak: </label>
+                <input
+                  type="number"
+                  name="quantity"
+                  value={product.quantity}
+                  onChange={(event) => handleProductChange(index, event)}
+                  required
+                />
+              </div>
+              <button type="button" onClick={() => handleRemoveProduct(index)}>
+                Remove
+              </button>
             </div>
-            <div>
-              <label>Harga: </label>
-              <input
-                type="number"
-                name="price"
-                value={product.price}
-                onChange={(event) => handleProductChange(index, event)}
-                required
-              />
-            </div>
-            <div>
-              <label>Jumlah Kotak: </label>
-              <input
-                type="number"
-                name="quantity"
-                value={product.quantity}
-                onChange={(event) => handleProductChange(index, event)}
-                required
-              />
-            </div>
-            <button type="button" onClick={() => handleRemoveProduct(index)}>
-              Remove
-            </button>
-          </div>
-        ))}
-        <button type="button" onClick={handleAddProduct}>
-          Add Product
-        </button>
-        <br />
-        <hr />
-        <button type="submit">Submit</button>
-      </form>
-      <ReactToPrint
-        trigger={() => <button>Print</button>}
-        content={() => componentRef.current}
-      />
+          ))}
+          <button type="button" onClick={handleAddProduct}>
+            Add Product
+          </button>
+          <br />
+          <hr />
+          <button type="submit">Submit</button>
+        </form>
+        <ReactToPrint
+          trigger={() => <button>Print</button>}
+          content={() => componentRef.current}
+          pageStyle="@page { size: auto; margin: 10mm; }" // Styling for printing
+        />
+      </div>
       <div ref={componentRef} className="label-container">
         {labels.map((label, index) => (
           <div key={index} className="label">

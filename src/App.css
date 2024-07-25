@@ -37,3 +37,9 @@
   width: 1cm;
   height: 1.2cm;
 }
+
+@media print {
+  .form-product {
+      visibility: hidden;
+  }
+}
