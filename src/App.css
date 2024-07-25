@@ -19,7 +19,7 @@
   padding: 5px;
 }
 .product-name {
-  font-size: 9px;
+  font-size: 10pt;
   margin: 0;
 }
 .price-container {
@@ -29,11 +29,11 @@
   margin-top: 5px;
 }
 .price {
-  font-size: 16px;
+  font-size: 16pt;
   font-weight: bold;
   margin: 0 5px 0 0;
 }
 .logo {
   width: 1cm;
-  height: 1cm;
+  height: 1.2cm;
 }
