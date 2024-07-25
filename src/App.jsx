@@ -97,7 +97,7 @@ const App = () => {
       </div>
       <div ref={componentRef} className="label-container">
         {labels.map((label, index) => (
-          <div key={index} className="label">
+          <div key={index} className={`label ${(index % 44 === 0 && index !== 0) ? 'page-break' : ''}`}>
             <p className="product-name">{label.name}</p>
             <div className="price-container">
               <p className="price">Rp.{label.price},-</p>
