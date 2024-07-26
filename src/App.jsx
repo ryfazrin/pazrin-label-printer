@@ -47,7 +47,7 @@ const App = () => {
   return (
     <div>
       <div className="form-product">
-        <h1>Riska Voucher Printer</h1>
+        <h1>Gasan Riska</h1>
         <form onSubmit={handleSubmit}>
           {products.map((product, index) => (
             <div key={index} style={{ marginBottom: "20px" }}>
@@ -82,15 +82,15 @@ const App = () => {
                 />
               </div>
               <button type="button" onClick={() => handleRemoveProduct(index)}>
-                Remove
+                Hapus
               </button>
             </div>
           ))}
           <button type="button" onClick={handleAddProduct}>
-            Add Product
+            Tambah Produk
           </button>
           <br /><br />
-          <button type="submit">Submit</button>
+          <button type="submit">Simpan</button>
           <hr />
         </form>
         <ReactToPrint
