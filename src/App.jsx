@@ -38,7 +38,7 @@ const App = () => {
       }))
     );
     setLabels(newLabels);
-    alert('Success');
+    alert('Success, siap print.');
   };
 
   return (
