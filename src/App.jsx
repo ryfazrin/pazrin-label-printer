@@ -47,7 +47,7 @@ const App = () => {
   return (
     <div>
       <div className="form-product">
-        <h1>Gasan Riska</h1>
+        <h1>Semangat bekerja Riska 💅</h1>
         <form onSubmit={handleSubmit}>
           {products.map((product, index) => (
             <div key={index} style={{ marginBottom: "20px" }}>
