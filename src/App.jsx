@@ -41,6 +41,9 @@ const App = () => {
     alert('Success, siap print.');
   };
 
+  const currencyFormat = (price) => 
+    new Intl.NumberFormat().format(price);
+
   return (
     <div>
       <div className="form-product">
@@ -101,7 +104,7 @@ const App = () => {
           <div key={index} className={`label ${(index % 44 === 0 && index !== 0) ? 'page-break' : ''}`}>
             <p className="product-name">{label.name}</p>
             <div className="price-container">
-              <p className="price">Rp.{label.price},-</p>
+              <p className="price">Rp.{currencyFormat(label.price)},-</p>
               <img src={unileverLogo} alt="Logo" className="logo" />
             </div>
           </div>
