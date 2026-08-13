@@ -64,11 +64,12 @@ const App = () => {
       <div ref={componentRef} className="label-container">
         {labels.map((label, index) => (
           <div key={index} className={`label ${(index % 44 === 0 && index !== 0) ? 'page-break' : ''}`}>
-            <p className="label-number">{label.number}</p>
             <div className="wedding-footer">
               <img src={weddingLogo} alt="Wedding Rings" className="logo-wedding" />
-              <p className="wedding-text">Riska & Pazrin Wedding</p>
+              <p className="wedding-text">Wedding</p>
+              <p className="wedding-text">Riska & Pazrin</p>
             </div>
+            <p className="label-number">{label.number}</p>
           </div>
         ))}
       </div>

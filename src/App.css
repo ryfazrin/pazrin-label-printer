@@ -44,7 +44,9 @@
   font-size: 6pt;
   margin: 0;
   font-weight: 500;
-  font-family: 'Brush Script MT', 'Comic Sans MS', cursive, sans-serif;
+  font-family: "Great Vibes", cursive !important;
+  /* font-family: "Cormorant Garamond", serif !important; */
+  /* font-family: 'Brush Script MT', 'Comic Sans MS', cursive, sans-serif; */
 }
 
 @media print {
