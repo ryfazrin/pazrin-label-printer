@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60">
-  <!-- Left Ring -->
-  <circle cx="35" cy="30" r="20" fill="none" stroke="#C5A059" stroke-width="4" />
-  <!-- Right Ring -->
-  <circle cx="65" cy="30" r="20" fill="none" stroke="#C5A059" stroke-width="4" />
-  <!-- Diamond / Heart on top? -->
-  <!-- <path d="M 50 20 C 50 20, 55 15, 60 20 C 65 25, 50 35, 50 35 C 50 35, 35 25, 40 20 C 45 15, 50 20, 50 20" fill="#E63946" stroke="none" /> -->
-</svg>

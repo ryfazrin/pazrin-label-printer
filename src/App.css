@@ -7,46 +7,18 @@
   padding: 20px;
 }
 .label {
-  border: 2px solid black;
-  width: 4.25cm;
-  height: 2.1cm;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  padding: 2px;
   box-sizing: border-box;
 }
 
-.label-number {
-  font-size: 22pt;
-  font-weight: bold;
-  margin: 0;
-  line-height: 1;
-}
-
-.wedding-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.label-image {
   width: 100%;
-}
-
-.logo-wedding {
-  height: 20px;
-  width: auto;
-  margin-bottom: 2px;
-}
-
-.wedding-text {
-  font-size: 6pt;
-  margin: 0;
-  font-weight: 500;
-  font-family: "Great Vibes", cursive !important;
-  /* font-family: "Cormorant Garamond", serif !important; */
-  /* font-family: 'Brush Script MT', 'Comic Sans MS', cursive, sans-serif; */
+  height: 100%;
+  object-fit: contain;
 }
 
 @media print {

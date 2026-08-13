@@ -1,11 +1,11 @@
 import { useState, useRef } from "react";
 import ReactToPrint from "react-to-print";
 import "./App.css";
-import weddingLogo from "./assets/wedding-rings.svg";
+import logoGula from "./assets/logo-gula.png";
 
 const App = () => {
   const [startNumber, setStartNumber] = useState(1);
-  const [quantity, setQuantity] = useState(44);
+  const [quantity, setQuantity] = useState(36);
   const [labels, setLabels] = useState([]);
   const componentRef = useRef();
 
@@ -58,18 +58,13 @@ const App = () => {
         <ReactToPrint
           trigger={() => <button>Print</button>}
           content={() => componentRef.current}
-          pageStyle="@page { size: auto; margin: 10mm; }"
+          pageStyle="@page { size: auto; }"
         />
       </div>
       <div ref={componentRef} className="label-container">
         {labels.map((label, index) => (
-          <div key={index} className={`label ${(index % 44 === 0 && index !== 0) ? 'page-break' : ''}`}>
-            <div className="wedding-footer">
-              <img src={weddingLogo} alt="Wedding Rings" className="logo-wedding" />
-              <p className="wedding-text">Wedding</p>
-              <p className="wedding-text">Riska & Pazrin</p>
-            </div>
-            <p className="label-number">{label.number}</p>
+          <div key={index} className={`label ${(index % 36 === 0 && index !== 0) ? 'page-break' : ''}`}>
+            <img src={logoGula} alt="Logo Gula" className="label-image" />
           </div>
         ))}
       </div>
